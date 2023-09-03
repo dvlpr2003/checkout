@@ -1,0 +1,173 @@
+* {
+  font-family: sans-serif;
+}
+body {
+  background-color: #f78da7;
+}
+.container {
+  display: flex;
+  height: 650px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container > div {
+  width: 500px;
+  height: 600px;
+  position: relative;
+}
+.item-1 {
+  background-color: #fcc8d1;
+}
+.item-2 {
+  background-color: white;
+}
+.text-1 {
+  font-size: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2.3rem;
+}
+#img {
+  display: flex;
+  justify-content: center;
+  transform: rotate(-5deg);
+  margin-bottom: 2rem;
+}
+#img img {
+  height: 16rem;
+}
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* font-family: "Hind Siliguri", sans-serif; */
+  gap: 1rem;
+}
+.text-4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+.text-2,
+.text-3 {
+  font-size: 1.3rem;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.arrow {
+  border: 3px solid black;
+  border-top: 0px;
+  border-right: 0px;
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  transform: rotate(40deg);
+}
+span {
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+}
+.shop-more {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 1rem;
+
+  width: 200px;
+}
+.payment {
+  margin-top: 1rem;
+  margin-left: 3.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.accept {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+}
+.payment-options {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+#visa,
+#master-card,
+#google-pay,
+#paypal,
+#apple-pay {
+  max-height: 1.5rem;
+  flex-shrink: 1;
+}
+#paypal {
+  border-radius: 8px;
+  max-height: 1.8rem;
+  flex-shrink: 1;
+}
+input {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-top: 0;
+  max-width: 400px;
+  flex-grow: 1;
+  height: 20px;
+  border: 1px solid rgb(118, 114, 114);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline: none;
+}
+label {
+  margin-bottom: 0;
+}
+#security-code {
+  margin-bottom: 1rem;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  max-width: 24.4rem;
+  flex-grow: 1;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+#cancel {
+  cursor: pointer;
+  max-width: 90px;
+  flex-grow: 1;
+  border: 1px solid none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#cancel > p {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+#checkout {
+  cursor: pointer;
+  border: 1px solid rgb(232, 39, 0);
+  border-radius: 5px;
+  background-color: rgb(232, 39, 0);
+  max-width: 150px;
+  flex-grow: 1;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#checkout > p {
+  font-size: 1rem;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+@media (max-width: 375px) {
+  #img img {
+    height: 14rem;
+  }
+}
